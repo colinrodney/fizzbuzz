@@ -40,6 +40,7 @@ function createButton() {
   reloadButton.classList.add("reload"); // addd class attribute to new element
   reloadButton.innerText = "reload";
   document.body.appendChild(reloadButton);
+  console.log(reloadButton); // TESTING PURPOSES ONLY
 }
 
 // function refreshPage() {
@@ -51,8 +52,8 @@ BUTTON.addEventListener("click", fizzbuzz);
 BUTTON.addEventListener("click", createButton);
 
 // reload button actions
-let reload = document.querySelector(".reload");
-console.log(reload);
+// let reload = document.querySelector(".reload");
+// console.log(reload);
 
 // invoke function - DONT FORGET TO TURN THIS BACK ON IF NEEDED!!
 // fizzbuzz();
