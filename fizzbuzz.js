@@ -33,12 +33,11 @@ function fizzbuzz() {
   }
 }
 
-function reload() {
-  location.reload();
-}
 // add event listener
 BUTTON.addEventListener("click", fizzbuzz);
-document.addEventListener("click", reload);
+BUTTON.addEventListener("click", (e) => {
+  location.reload;
+});
 
 // invoke function - DONT FORGET TO TURN THIS BACK ON IF NEEDED!!
 // fizzbuzz();
