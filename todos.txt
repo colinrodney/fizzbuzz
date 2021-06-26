@@ -1,0 +1,17 @@
+FizzBuzz Challenge
+
+Goal:
+Writ a program that prints the numbers from 1 to 100. For multiples of three print "Fizz" instead of the number and for multiples of five print "Buzz". For numbers that are multiples of both three and five print "FizzBuzz"
+
+Restate Goal:
+Write a program that prints numbers from 1 -100. If the number is a multiple of three instead of printing that number, print the word "Fizz". If the number is a multiple of five instead of printing that number, print the word "Buzz". For numbers that are multiples of both three and five instead of printing that number, print the word "FizzBuzz".
+
+Project TODO List:
+
+1. Write a loop that prints numbers 1 to 100 inclusive. ** DONE
+
+2. @ Each loop iteration test each number to see if the number is evenly divisible by either three, five, or both three and five. ** DONE
+
+3. Print content accordingly ** DONE
+
+4. Show results of operation on screen and not in console
