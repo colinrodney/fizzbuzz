@@ -37,7 +37,7 @@ function fizzbuzz() {
 function createButton() {
   // generate reload button when function called via button click
   let reloadButton = document.createElement("button");
-  reloadButton.className = "reload"; // adds class="reload" to new element
+  reloadButton.className += "reload"; // adds class="reload" to new element
   reloadButton.innerText = "reload";
   document.body.appendChild(reloadButton);
 }
