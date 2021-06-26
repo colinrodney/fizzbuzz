@@ -32,8 +32,14 @@ function fizzbuzz() {
   }
 }
 
+function clear() {
+  let div = document.querySelectorAll("div");
+  div.remove();
+}
+
 // add event listener
 BUTTON.addEventListener("click", fizzbuzz);
+BUTTON.addEventListener("click", clear);
 
 // invoke function - DONT FORGET TO TURN THIS BACK ON IF NEEDED!!
 // fizzbuzz();
