@@ -55,7 +55,7 @@ createReloadButton = () => {
 // add event listeners
 BUTTON.addEventListener("click", fizzbuzz);
 BUTTON.addEventListener("click", createReloadButton);
-reload.addEventListener("click", (e) => {
+createReloadButton.addEventListener("click", (e) => {
   location.reload();
 });
 
