@@ -48,18 +48,22 @@ createReloadButton = () => {
   // document.body.appendChild(reloadButton);
   console.log(reloadButton); // TESTING PURPOSES ONLY- delete this next time!
   // return reloadButton;
+  reloadButton.addEventListener("click", (e) => {
+    // location.reload();
+    console.log("refresh!");
+  });
   return document.body.appendChild(reloadButton);
 };
 // END FUNCTIONS
 
 // ASSIGN BUTTON OBJECT TO VARIABLE
-let reload = createReloadButton;
+// let reload = createReloadButton;
 
 // EVENT LISTENER
 BUTTON.addEventListener("click", fizzbuzz);
 BUTTON.addEventListener("click", createReloadButton);
 
 // manipulate dynmically created button in global space
-reload.addEventListener("click", (e) => {
-  location.reload();
-});
+// reload.addEventListener("click", (e) => {
+//   location.reload();
+// });
