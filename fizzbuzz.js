@@ -43,19 +43,19 @@ function fizzbuzz() {
 //   return reloadButton;
 // }
 
-createReloadButton = () => {
+let refreshButton = (createReloadButton = () => {
   let reloadButton = document.createElement("button");
   reloadButton.className = "reload"; // addd class attribute to new element
   reloadButton.innerText = "reload";
   document.body.appendChild(reloadButton);
   console.log(reloadButton); // TESTING PURPOSES ONLY- delete this next time!
   return reloadButton;
-};
+});
 
 // add event listeners
 BUTTON.addEventListener("click", fizzbuzz);
-BUTTON.addEventListener("click", createReloadButton);
-createReloadButton.addEventListener("click", (e) => {
+BUTTON.addEventListener("click", refreshButton);
+refreshButton.addEventListener("click", (e) => {
   location.reload();
 });
 
