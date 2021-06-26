@@ -1,16 +1,17 @@
 console.warn("connected");
 
-// DOM ELEMENTS
+// 1. INIT DOM ELEMENTS
 const BUTTON = document.querySelector("button");
 console.log(BUTTON);
 
-// Declare some variables
+// 2. INIT VARIABLES
 let multiple_of_three = "fizz";
 let multiple_of_five = "buzz";
 let multiple_of_three_and_five = "fizzbuzz";
 let value;
 
-//main fizzbuzz function
+/* 3. FUNCTIONS */
+// A. FIZZBUZZ
 function fizzbuzz() {
   for (let num = 1; num < 101; num++) {
     let div = document.createElement("div");
@@ -43,22 +44,31 @@ function fizzbuzz() {
 //   return reloadButton;
 // }
 
+/*B. CREATE RELOAD BUTTON: 
+> creates reload button + initializes .reload class
+> assigns text to button
+> adds button to body via appendChild() method
+> returns dynamically created button from function 
+such that it can be used in global scope (see event listener section)
+*/
 createReloadButton = () => {
-  let reloadButton = document.createElement("button");
+  const reloadButton = document.createElement("button");
   reloadButton.className = "reload"; // addd class attribute to new element
   reloadButton.innerText = "reload";
   document.body.appendChild(reloadButton);
   console.log(reloadButton); // TESTING PURPOSES ONLY- delete this next time!
   return reloadButton;
 };
+// END FUNCTIONS
 
-// add event listeners
+// ASSIGN BUTTON OBJECT TO VARIABLE
+let reload = createReloadButton();
+
+// EVENT LISTENER
 BUTTON.addEventListener("click", fizzbuzz);
 BUTTON.addEventListener("click", createReloadButton);
-createReloadButton.addEventListener("click", (e) => {
+
+// manipulate dynmically created button in global space
+reload.addEventListener("click", (e) => {
   location.reload();
 });
-
-// let reload = createReloadButton(); // manipulate dynmically created button in global space
-
-console.log(x); // testing purposes - delete this next time!!
