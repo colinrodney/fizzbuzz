@@ -1,31 +1,30 @@
 console.warn("connected");
 
+// DOM ELEMENTS
+const BUTTON = document.querySelector("button");
+console.log(BUTTON);
 
 // Declare some variables
-let multiple_of_three = "fizz"
-let multiple_of_five = "buzz"
-let multiple_of_three_and_five = "fizzbuzz"
+let multiple_of_three = "fizz";
+let multiple_of_five = "buzz";
+let multiple_of_three_and_five = "fizzbuzz";
 let value;
 
-// 1. Write loop to print numbers 1 - 100 inclusive
+//main fizzbuzz function
+function fizzbuzz() {
+  for (let num = 1; num < 101; num++) {
+    let div = document.createElement("div");
 
-function fizzbuzz(){
-  for(let num = 1; num < 101; num++){
-    let div = document.createElement('div');
-
-    if(num %3 === 0 && num %5 ===0){
+    if (num % 3 === 0 && num % 5 === 0) {
       div.innerText = multiple_of_three_and_five;
       // console.log(multiple_of_three_and_five);
-    }
-    else if(num %3 === 0){
+    } else if (num % 3 === 0) {
       div.innerText = multiple_of_three;
       // console.log(multiple_of_three);
-    }
-    else if(num %5 === 0){
+    } else if (num % 5 === 0) {
       div.innerText = multiple_of_five;
       // console.log(multiple_of_five);
-    }
-    else{
+    } else {
       div.innerText = num;
       // console.log(num);
     }
@@ -33,8 +32,13 @@ function fizzbuzz(){
   }
 }
 
+// add event listener
+BUTTON.addEventListener("click", function () {
+  console.log("button clicked!");
+});
+
 // invoke function
-fizzbuzz()
+fizzbuzz();
 
 // NOTES
 /*
@@ -43,9 +47,3 @@ document.createElement()
 document.body.appendChild()
 
 */
-
-
-
-
-
-
