@@ -33,7 +33,7 @@ function fizzbuzz() {
 }
 
 // add event listener
-BUTTON.addEventListener("click", fizzbuzz());
+BUTTON.addEventListener("click", fizzbuzz);
 
 // invoke function - DONT FORGET TO TURN THIS BACK ON IF NEEDED!!
 // fizzbuzz();
@@ -42,6 +42,4 @@ BUTTON.addEventListener("click", fizzbuzz());
 /*
 research: 
 document.createElement()
-document.body.appendChild()
-
-*/
+document.body.appendChild() */
