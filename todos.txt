@@ -19,5 +19,8 @@ Project TODO List:
 6/25/2021
 
 > Begin work on UI
+  - When page loads only the description and the button should Be seen!
   - Add clickable button that triggers fizzbuzz to run
+    - Make sure button works and does something!
+
   - Begin work on CSS
