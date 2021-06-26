@@ -40,9 +40,9 @@ function fizzbuzz() {
 
 // add event listener
 BUTTON.addEventListener("click", fizzbuzz);
-BUTTON.addEventListener("click", (e) => {
-  location.reload();
-});
+// BUTTON.addEventListener("click", (e) => {
+//   location.reload();
+// });
 
 // invoke function - DONT FORGET TO TURN THIS BACK ON IF NEEDED!!
 // fizzbuzz();
