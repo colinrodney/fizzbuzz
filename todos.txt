@@ -15,3 +15,9 @@ Project TODO List:
 3. Print content accordingly ** DONE
 
 4. Show results of operation on screen and not in console
+
+6/25/2021
+
+> Begin work on UI
+  - Add clickable button that triggers fizzbuzz to run
+  - Begin work on CSS
