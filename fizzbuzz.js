@@ -34,7 +34,7 @@ function fizzbuzz() {
 }
 
 function clear() {
-  document.querySelector("main").removeChild(div);
+  location.reload();
 }
 
 // add event listener
