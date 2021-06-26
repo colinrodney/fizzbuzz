@@ -31,18 +31,19 @@ function fizzbuzz() {
     // document.body.appendChild(div);
     document.querySelector("main").appendChild(div);
   }
+}
 
+// generates reload button upon button click
+function createButton() {
   // generate reload button when function called via button click
   let reloadButton = document.createElement("button");
   reloadButton.innerText = "reload";
   document.body.appendChild(reloadButton);
 }
 
-// add event listener
+// add event listeners
 BUTTON.addEventListener("click", fizzbuzz);
-// BUTTON.addEventListener("click", (e) => {
-//   location.reload();
-// });
+BUTTON.addEventListener("click", createButton);
 
 // invoke function - DONT FORGET TO TURN THIS BACK ON IF NEEDED!!
 // fizzbuzz();
