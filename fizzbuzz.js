@@ -39,7 +39,7 @@ function createButton() {
   let reloadButton = document.createElement("button");
   reloadButton.innerText = "reload";
   // document.body.appendChild(reloadButton);
-  reloadButton.insertBefore(document.querySelector("main"));
+  reloadButton.insertBefore(reloadButton, document.querySelector("main"));
 }
 
 // add event listeners
