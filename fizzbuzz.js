@@ -43,7 +43,7 @@ function createButton() {
 }
 
 function refreshPage() {
-  location.reload();
+  console.log("reload!");
 }
 
 // add event listeners
