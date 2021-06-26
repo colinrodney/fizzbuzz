@@ -15,3 +15,10 @@ Project TODO List:
 3. Print content accordingly ** DONE
 
 4. Show results of operation on screen and not in console
+
+
+// NOTES - What did we learn from this Project?
+/*
+research: 
+document.createElement()
+document.body.appendChild() */
