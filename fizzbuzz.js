@@ -43,27 +43,19 @@ such that it can be used in global scope (see event listener section)
 */
 createReloadButton = () => {
   const reloadButton = document.createElement("button");
+  //console.log(reloadButton); <-- CHK FOR EXISTENCE OF NODE
   reloadButton.className = "reload"; // addd class attribute to new element
   reloadButton.innerText = "reload";
-  // document.body.appendChild(reloadButton);
-  console.log(reloadButton); // TESTING PURPOSES ONLY- delete this next time!
-  // return reloadButton;
   reloadButton.addEventListener("click", (e) => {
-    // location.reload();
-    console.log("refresh!");
+    location.reload();
   });
   return document.body.appendChild(reloadButton);
 };
 // END FUNCTIONS
 
-// ASSIGN BUTTON OBJECT TO VARIABLE
-// let reload = createReloadButton;
-
-// EVENT LISTENER
+/*
+4. EVENT LISTENERS:
+> reload button event listener @ createReloadButton() function
+*/
 BUTTON.addEventListener("click", fizzbuzz);
 BUTTON.addEventListener("click", createReloadButton);
-
-// manipulate dynmically created button in global space
-// reload.addEventListener("click", (e) => {
-//   location.reload();
-// });
