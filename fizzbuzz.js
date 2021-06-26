@@ -28,7 +28,8 @@ function fizzbuzz() {
       div.innerText = num;
       // console.log(num);
     }
-    document.body.appendChild(div);
+    // document.body.appendChild(div);
+    document.querySelector("main").appendChild(div);
   }
 }
 
