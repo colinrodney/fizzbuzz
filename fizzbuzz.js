@@ -10,14 +10,6 @@ let multiple_of_five = "buzz";
 let multiple_of_three_and_five = "fizzbuzz";
 let value;
 
-// generates reload button upon button click
-function createButton() {
-  // generate reload button when function called via button click
-  let reloadButton = document.createElement("button");
-  reloadButton.innerText = "reload";
-  document.body.appendChild(reloadButton);
-}
-
 //main fizzbuzz function
 function fizzbuzz() {
   for (let num = 1; num < 101; num++) {
@@ -41,9 +33,18 @@ function fizzbuzz() {
   }
 }
 
+// generates reload button upon button click
+function createButton() {
+  // generate reload button when function called via button click
+  let reloadButton = document.createElement("button");
+  reloadButton.innerText = "reload";
+  // document.body.appendChild(reloadButton);
+  reloadButton.insertBefore(document.querySelector("main"));
+}
+
 // add event listeners
-BUTTON.addEventListener("click", createButton);
 BUTTON.addEventListener("click", fizzbuzz);
+BUTTON.addEventListener("click", createButton);
 
 // invoke function - DONT FORGET TO TURN THIS BACK ON IF NEEDED!!
 // fizzbuzz();
