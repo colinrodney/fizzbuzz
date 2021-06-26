@@ -16,6 +16,7 @@ Project TODO List:
 
 4. Show results of operation on screen and not in console
 
+<<<<<<< HEAD
 6/25/2021
 
 > Begin work on UI
@@ -30,3 +31,11 @@ Project TODO List:
     - Make sure button works and does something! **DONE
 
   - Begin work on CSS
+
+
+// NOTES - What did we learn from this Project?
+/*
+research: 
+document.createElement()
+document.body.appendChild() */
+

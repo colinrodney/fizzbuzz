@@ -34,32 +34,31 @@ function fizzbuzz() {
 }
 
 // generates reload button upon 'fizzbuzz' button click...
-function createReloadButton() {
+// function createReloadButton() {
+//   let reloadButton = document.createElement("button");
+//   reloadButton.className = "reload"; // addd class attribute to new element
+//   reloadButton.innerText = "reload";
+//   document.body.appendChild(reloadButton);
+//   console.log(reloadButton); // TESTING PURPOSES ONLY- delete this next time!
+//   return reloadButton;
+// }
+
+createReloadButton = () => {
   let reloadButton = document.createElement("button");
   reloadButton.className = "reload"; // addd class attribute to new element
   reloadButton.innerText = "reload";
   document.body.appendChild(reloadButton);
-  console.log(reloadButton); // TESTING PURPOSES ONLY
+  console.log(reloadButton); // TESTING PURPOSES ONLY- delete this next time!
   return reloadButton;
-}
-
-// function refreshPage() {
-//   console.log("reload!");
-// }
+};
 
 // add event listeners
 BUTTON.addEventListener("click", fizzbuzz);
 BUTTON.addEventListener("click", createReloadButton);
+reload.addEventListener("click", (e) => {
+  location.reload();
+});
 
-// reload button actions
-let x = createReloadButton();
-console.log(x);
+// let reload = createReloadButton(); // manipulate dynmically created button in global space
 
-// invoke function - DONT FORGET TO TURN THIS BACK ON IF NEEDED!!
-// fizzbuzz();
-
-// NOTES
-/*
-research: 
-document.createElement()
-document.body.appendChild() */
+console.log(x); // testing purposes - delete this next time!!
