@@ -20,7 +20,13 @@ Project TODO List:
 
 > Begin work on UI
   - When page loads only the description and the button should Be seen!
+    - use "onload" / "load" eventListener to load an empty page w/ exception of 
+    description paragraph and button.
+
+    - OR --> make the function the event listener calls the main fizzbuzz function.
+    THIS SHOULD HOLD THE SCRIPT FROM RUNNING UNTIL THE BUTTON IS CLICKED!
+
   - Add clickable button that triggers fizzbuzz to run
-    - Make sure button works and does something!
+    - Make sure button works and does something! **DONE
 
   - Begin work on CSS
