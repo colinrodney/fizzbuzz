@@ -34,16 +34,6 @@ function fizzbuzz() {
   }
 }
 
-// generates reload button upon 'fizzbuzz' button click...
-// function createReloadButton() {
-//   let reloadButton = document.createElement("button");
-//   reloadButton.className = "reload"; // addd class attribute to new element
-//   reloadButton.innerText = "reload";
-//   document.body.appendChild(reloadButton);
-//   console.log(reloadButton); // TESTING PURPOSES ONLY- delete this next time!
-//   return reloadButton;
-// }
-
 /*B. CREATE RELOAD BUTTON: 
 > creates reload button + initializes .reload class
 > assigns text to button
@@ -55,14 +45,15 @@ createReloadButton = () => {
   const reloadButton = document.createElement("button");
   reloadButton.className = "reload"; // addd class attribute to new element
   reloadButton.innerText = "reload";
-  document.body.appendChild(reloadButton);
+  // document.body.appendChild(reloadButton);
   console.log(reloadButton); // TESTING PURPOSES ONLY- delete this next time!
-  return reloadButton;
+  // return reloadButton;
+  return document.body.appendChild(reloadButton);
 };
 // END FUNCTIONS
 
 // ASSIGN BUTTON OBJECT TO VARIABLE
-// let reload = createReloadButton();
+let reload = createReloadButton();
 
 // EVENT LISTENER
 BUTTON.addEventListener("click", fizzbuzz);
