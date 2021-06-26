@@ -38,8 +38,7 @@ function createButton() {
   // generate reload button when function called via button click
   let reloadButton = document.createElement("button");
   reloadButton.innerText = "reload";
-  // document.body.appendChild(reloadButton);
-  reloadButton.insertBefore(reloadButton, document.querySelector("main"));
+  document.body.appendChild(reloadButton);
 }
 
 // add event listeners
