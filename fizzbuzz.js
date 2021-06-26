@@ -34,7 +34,7 @@ function fizzbuzz() {
 
 function clear() {
   let div = document.querySelectorAll("div");
-  div.remove();
+  div.remove(div);
 }
 
 // add event listener
