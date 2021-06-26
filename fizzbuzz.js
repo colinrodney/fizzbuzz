@@ -52,7 +52,7 @@ BUTTON.addEventListener("click", fizzbuzz);
 BUTTON.addEventListener("click", createReloadButton);
 
 // reload button actions
-let x = document.querySelector(".reload");
+let x = createReloadButton();
 console.log(x);
 
 // invoke function - DONT FORGET TO TURN THIS BACK ON IF NEEDED!!
