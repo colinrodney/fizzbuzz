@@ -34,13 +34,13 @@ function fizzbuzz() {
 }
 
 // generates reload button upon 'fizzbuzz' button click...
-function createButton() {
-  // generate reload button when function called via button click
+function createReloadButton() {
   let reloadButton = document.createElement("button");
   reloadButton.className = "reload"; // addd class attribute to new element
   reloadButton.innerText = "reload";
   document.body.appendChild(reloadButton);
   console.log(reloadButton); // TESTING PURPOSES ONLY
+  return reloadButton;
 }
 
 // function refreshPage() {
@@ -49,11 +49,11 @@ function createButton() {
 
 // add event listeners
 BUTTON.addEventListener("click", fizzbuzz);
-BUTTON.addEventListener("click", createButton);
+BUTTON.addEventListener("click", createReloadButton);
 
 // reload button actions
-let reload = document.querySelector(".reload");
-console.log(reload);
+let x = document.querySelector(".reload");
+console.log(x);
 
 // invoke function - DONT FORGET TO TURN THIS BACK ON IF NEEDED!!
 // fizzbuzz();
