@@ -62,7 +62,7 @@ createReloadButton = () => {
 // END FUNCTIONS
 
 // ASSIGN BUTTON OBJECT TO VARIABLE
-let reload = createReloadButton();
+// let reload = createReloadButton();
 
 // EVENT LISTENER
 BUTTON.addEventListener("click", fizzbuzz);
