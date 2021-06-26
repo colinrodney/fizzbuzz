@@ -33,12 +33,10 @@ function fizzbuzz() {
 }
 
 // add event listener
-BUTTON.addEventListener("click", function () {
-  console.log("button clicked!");
-});
+BUTTON.addEventListener("click", fizzbuzz());
 
-// invoke function
-fizzbuzz();
+// invoke function - DONT FORGET TO TURN THIS BACK ON IF NEEDED!!
+// fizzbuzz();
 
 // NOTES
 /*
