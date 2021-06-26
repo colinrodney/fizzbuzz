@@ -31,6 +31,11 @@ function fizzbuzz() {
     // document.body.appendChild(div);
     document.querySelector("main").appendChild(div);
   }
+
+  // generate reload button when function called via button click
+  let reloadButton = document.createElement("button");
+  reloadButton.innerText = "reload";
+  document.body.appendChild(reloadButton);
 }
 
 // add event listener
