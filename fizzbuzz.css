@@ -26,3 +26,14 @@ header {
   padding: var(--padding);
   background: var(--header-background);
 }
+
+button {
+  display: block;
+  min-height: 2rem;
+  min-width: 30%;
+  font-size: 1.2rem;
+}
+
+.main-content div:nth-of-type(2) {
+  background: darkred;
+}
