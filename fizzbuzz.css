@@ -5,3 +5,23 @@
   margin: 0;
   padding: 0;
 }
+
+/* variables */
+:root {
+  --font: "Roboto", sans-serif;
+  --body-background: lightslategray;
+  --header-background: darkred;
+  --text-color: #fff;
+  --padding: 1rem;
+}
+
+body {
+  background: var(--body-background);
+  font-family: var(--font);
+  color: var(--text-color);
+}
+
+header {
+  padding: var(--padding);
+  background: var(--header-background);
+}
