@@ -35,7 +35,10 @@ button {
   margin: 1rem;
 }
 
+.main-content {
+  padding: var(--padding);
+}
+
 .main-content div:nth-of-type(even) {
   background: var(--header-background);
-  padding: var(--padding);
 }
