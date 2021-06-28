@@ -35,5 +35,5 @@ button {
 }
 
 .main-content div:nth-of-type(even) {
-  background: darkred;
+  background: var(--header-background);
 }
