@@ -9,9 +9,9 @@
 /* variables */
 :root {
   --font: "Roboto", sans-serif;
-  --body-background: lightslategray;
-  --header-background: darkred;
-  --text-color: #fff;
+  --body-background: #e1e7ee;
+  --header-background: #d3e2e4;
+  /* --text-color: #fff; */
   --padding: 1rem;
 }
 
