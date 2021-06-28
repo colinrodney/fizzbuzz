@@ -32,8 +32,10 @@ button {
   min-height: 2rem;
   min-width: 30%;
   font-size: 1.2rem;
+  margin: 1rem;
 }
 
 .main-content div:nth-of-type(even) {
   background: var(--header-background);
+  padding: var(--padding);
 }
