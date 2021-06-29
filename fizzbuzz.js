@@ -29,10 +29,8 @@ function fizzbuzz() {
       div.innerText = num;
       // console.log(num);
     }
-    // document.body.appendChild(div);
+    // show results of loop in main-content section
     document.querySelector("main").appendChild(div);
-
-    //remove event listener from 'fizzbuzz' button
   }
 }
 
@@ -41,26 +39,25 @@ function fizzbuzz() {
 > assigns text to button
 > adds button to body via appendChild() method
 > returns dynamically created button from function 
-such that it can be used in global scope (see event listener section)
 */
 createReloadButton = () => {
   const reloadButton = document.createElement("button");
   //console.log(reloadButton); <-- CHK FOR EXISTENCE OF NODE
   reloadButton.className = "reload"; // addd class attribute to new element
-  reloadButton.innerText = "reload";
+  reloadButton.innerText = "reset";
   reloadButton.addEventListener("click", (e) => {
     location.reload();
   });
   // return document.body.appendChild(reloadButton); <-- MAY NEED THIS AGAIN...???
 
-  // disable'fizzbuzz' button after reload button created!
+  // disable'fizzbuzz' button after reload button generated!
   FizzbuzzButton.disabled = true;
 
-  return reloadButton;
+  // attach created button to body of document
+  return document.body.appendChild(createReloadButton);
 };
 
-// append reload button to body of document in global scope??
-// document.body.appendChild(createReloadButton);
+// verify existence of reload button...
 console.log(createReloadButton);
 
 // END FUNCTIONS
@@ -70,11 +67,10 @@ console.log(createReloadButton);
 
 NOTE: event listener for 'reload' button is attached
 when button is created. Clicking 'fizzbuzz' button:
-1. Triggers program to run
+
+1. Triggers fizzbuzz() [runs program]
 2. Dynamically creates 'reload' button
 
 */
 FizzbuzzButton.addEventListener("click", fizzbuzz);
 FizzbuzzButton.addEventListener("click", createReloadButton);
-
-// createReloadButton.addEventListener("click", createReloadButton);
