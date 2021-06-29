@@ -1,8 +1,8 @@
 console.warn("connected");
 
 // 1. INIT DOM ELEMENTS
-const BUTTON = document.querySelector("button");
-console.log(BUTTON);
+const FizzbuzzButton = document.getElementById("fizzbuzzButton");
+console.log(FizzbuzzButton);
 
 // 2. INIT VARIABLES
 let multiple_of_three = "fizz";
@@ -57,5 +57,5 @@ createReloadButton = () => {
 4. EVENT LISTENERS:
 > reload button event listener @ createReloadButton() function
 */
-BUTTON.addEventListener("click", fizzbuzz);
-BUTTON.addEventListener("click", createReloadButton);
+FizzbuzzButton.addEventListener("click", fizzbuzz);
+// BUTTON.addEventListener("click", createReloadButton);
