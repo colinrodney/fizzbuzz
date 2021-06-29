@@ -54,7 +54,8 @@ createReloadButton = () => {
 };
 
 // append reload button to body of document in global scope??
-document.body.appendChild(createReloadButton());
+// document.body.appendChild(createReloadButton);
+console.log(createReloadButton);
 
 // END FUNCTIONS
 
@@ -63,4 +64,6 @@ document.body.appendChild(createReloadButton());
 > reload button event listener @ createReloadButton() function
 */
 FizzbuzzButton.addEventListener("click", fizzbuzz);
-// createReloadButton.addEventListener("click", createReloadButton);
+FizzbuzzButton.addEventListener("click", createReloadButton);
+
+createReloadButton.addEventListener("click", createReloadButton);
