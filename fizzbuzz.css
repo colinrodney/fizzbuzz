@@ -27,6 +27,10 @@ header {
   background: var(--header-background);
 }
 
+header p {
+  max-width: 60ch;
+}
+
 button {
   display: block;
   min-height: 2rem;
