@@ -37,8 +37,9 @@ function fizzbuzz() {
 /*B. CREATE RELOAD BUTTON: 
 > creates reload button + initializes .reload class
 > assigns text to button
-> adds button to body via appendChild() method
-> returns dynamically created button from function 
+> disables fizzbuzz button after creating 'reload' button
+> returns dynamically created button from function +
+adds it to body of document.
 */
 createReloadButton = () => {
   const reloadButton = document.createElement("button");
