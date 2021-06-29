@@ -42,23 +42,19 @@ function fizzbuzz() {
 */
 createReloadButton = () => {
   const reloadButton = document.createElement("button");
-  //console.log(reloadButton); <-- CHK FOR EXISTENCE OF NODE
+  console.log(reloadButton); <-- CHK FOR EXISTENCE OF NODE
   reloadButton.className = "reload"; // addd class attribute to new element
   reloadButton.innerText = "reset";
   reloadButton.addEventListener("click", (e) => {
     location.reload();
   });
-  // return document.body.appendChild(reloadButton); <-- MAY NEED THIS AGAIN...???
-
+  
   // disable'fizzbuzz' button after reload button generated!
   FizzbuzzButton.disabled = true;
 
   // attach created button to body of document
-  return document.body.appendChild(createReloadButton);
+  return document.body.appendChild(reloadButton);
 };
-
-// verify existence of reload button...
-console.log(createReloadButton);
 
 // END FUNCTIONS
 
