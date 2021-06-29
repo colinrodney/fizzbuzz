@@ -31,6 +31,8 @@ function fizzbuzz() {
     }
     // document.body.appendChild(div);
     document.querySelector("main").appendChild(div);
+
+    //remove event listener from 'fizzbuzz' button
   }
 }
 
@@ -49,7 +51,11 @@ createReloadButton = () => {
   reloadButton.addEventListener("click", (e) => {
     location.reload();
   });
-  // return document.body.appendChild(reloadButton);
+  // return document.body.appendChild(reloadButton); <-- MAY NEED THIS AGAIN...???
+
+  // disable'fizzbuzz' button after reload button created!
+  FizzbuzzButton.disabled = true;
+
   return reloadButton;
 };
 
@@ -61,9 +67,14 @@ console.log(createReloadButton);
 
 /*
 4. EVENT LISTENERS:
-> reload button event listener @ createReloadButton() function
+
+NOTE: event listener for 'reload' button is attached
+when button is created. Clicking 'fizzbuzz' button:
+1. Triggers program to run
+2. Dynamically creates 'reload' button
+
 */
 FizzbuzzButton.addEventListener("click", fizzbuzz);
 FizzbuzzButton.addEventListener("click", createReloadButton);
 
-createReloadButton.addEventListener("click", createReloadButton);
+// createReloadButton.addEventListener("click", createReloadButton);
