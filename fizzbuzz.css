@@ -33,10 +33,11 @@ header p {
 
 button {
   display: block;
-  min-height: 2rem;
-  min-width: 30%;
+  min-height: 2.5rem;
+  width: 80%;
+  text-transform: uppercase;
+  margin: 2rem auto;
   font-size: 1.2rem;
-  margin: 1rem;
 }
 
 .main-content {
@@ -45,4 +46,13 @@ button {
 
 .main-content div:nth-of-type(even) {
   background: var(--header-background);
+}
+
+@media (min-width: 768px) {
+  button {
+    min-height: 3rem;
+    width: 40%;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
 }
