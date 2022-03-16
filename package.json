@@ -1,0 +1,26 @@
+{
+  "name": "fizzbuzz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fizzbuzz.js",
+  "scripts": {
+    "start": "node fizzbuzz.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colinrodney/fizzbuzz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colinrodney/fizzbuzz/issues"
+  },
+  "homepage": "https://github.com/colinrodney/fizzbuzz#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.2"
+  }
+}

@@ -1,0 +1,32 @@
+* = task completed!
+
+Resources:
+1.
+https://code.visualstudio.com/docs/typescript/typescript-tutorial
+
+2.
+https://www.typescriptlang.org/docs/handbook/dom-manipulation.html
+
+3.
+Google search string-
+how to assign an HTML element in typescript
+
+
+
+tsc filename.ts 
+
+(where filename is the name of the file to be compiled).
+
+
+TypeScript
+Fizzbuzz WebApp todo's
+1. append app container*
+2. append header*
+3. append fuzzbuzzButton*
+
+4. Restore fizzBuzzButton functionality
+4. append results @ class .main-content.
+
+
+IMPORTANT!
+***Remember to compile TypeScript to JavaScript using command:
