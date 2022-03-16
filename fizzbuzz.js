@@ -1,8 +1,8 @@
 console.warn("connected");
 
 // 1. INIT DOM ELEMENTS
-const FizzbuzzButton = document.getElementById("fizzbuzzButton");
-console.log(FizzbuzzButton);
+const FizzBuzzButton = document.getElementById("fizzBuzzButton");
+console.log(FizzBuzzButton);
 
 // 2. INIT VARIABLES
 let multiple_of_three = "fizz";
@@ -51,7 +51,7 @@ createReloadButton = () => {
   });
 
   // disable'fizzbuzz' button after reload button generated!
-  FizzbuzzButton.disabled = true;
+  FizzBuzzButton.disabled = true;
 
   // attach created button to body of document
   return document.body.appendChild(reloadButton);
@@ -69,5 +69,5 @@ when button is created. Clicking 'fizzbuzz' button:
 2. Dynamically creates 'reload' button
 
 */
-FizzbuzzButton.addEventListener("click", fizzbuzz);
-FizzbuzzButton.addEventListener("click", createReloadButton);
+FizzBuzzButton.addEventListener("click", fizzbuzz);
+FizzBuzzButton.addEventListener("click", createReloadButton);
